@@ -17,3 +17,8 @@ The left subtree of a node contains only nodes with keys lesser than the node’
 The right subtree of a node contains only nodes with keys greater than the node’s key.
 The left and right subtree each must also be a binary search tree.
 
+
+import matplotlib.pyplot as plt
+import time
+first thing first, we create an instance of the TimeTest object, which will take care of generating random arrays (you can also choose between an easy_logarithm ['e_log'] (array of sizes 10, 100, 1000, 10000 and 100000) or to create a log space (results are more precise but performance is taken down by the merge sort). After out Timetest object is instanciated, we run the test_it function, which will take care of filling up our dataframe with all the values we need for our statistics.
+
