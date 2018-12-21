@@ -1,7 +1,8 @@
 import random , time , heapq
 import matplotlib.pyplot as plt
-
+#solution to all of the problem in one page 
 #QuickSort
+
 def partition(arr, low, high):
     i = (low - 1)  # index of smaller element
     pivot = arr[high]  # pivot
@@ -206,7 +207,7 @@ for rounds in range(step , max_operations , step):
 #Graph
 xlabels = range(step , max_operations , step)
 
-plt.plot(xlabels , values_binarytree_add , label='Add')
+plt.plot(xlabels , values_binarytree_add , label='Add')#implememtation of graph for the binary tree
 plt.plot(xlabels , values_binarytree_min , label='Get Min')
 plt.plot(xlabels , values_binarytree_max , label='Get Max')
 plt.legend()
@@ -215,7 +216,7 @@ plt.ylabel("Execution time (msec)")
 plt.title("Performance of BinaryHeap's Solution")
 plt.show()
 
-plt.plot(xlabels , values_binarytree_add , label='Add')
+plt.plot(xlabels , values_binaryheap_add , label='Add')
 plt.plot(xlabels , values_binaryheap_min , label='Get Min')
 plt.plot(xlabels , values_binaryheap_max , label='Get Max')
 plt.legend()
@@ -224,7 +225,7 @@ plt.ylabel("Execution time (msec)")
 plt.title("Performance of BinaryTree's Solution")
 plt.show()
 
-plt.plot(xlabels , values_heap_add , label='Add')
+plt.plot(xlabels , values_heap_add , label='Add')#Graph for the python heap
 plt.plot(xlabels , values_heap_min , label='Get Min')
 plt.plot(xlabels , values_heap_max , label='Get Max')
 plt.legend()
@@ -233,7 +234,7 @@ plt.ylabel("Execution time (msec)")
 plt.title("Performance of Heap Solution")
 plt.show()
 
-plt.plot(xlabels , values_bubble_add , color='b' , linestyle='-' , label='Add')
+plt.plot(xlabels , values_bubble_add , color='b' , linestyle='-' , label='Add')#Graph for the bubble sort
 plt.plot(xlabels , values_bubble_min , color='b' , linestyle='--' , label='Get Min')
 plt.plot(xlabels , values_bubble_max , color='b' , linestyle='-.' , label='Get Max')
 plt.legend()
