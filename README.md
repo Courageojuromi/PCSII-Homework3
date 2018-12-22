@@ -21,8 +21,10 @@ The left and right subtree each must also be a binary search tree.
 
 Bubble sort, sometimes referred to as sinking sort, is a simple sorting algorithm that repeatedly steps through the list, compares adjacent pairs and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted. The algorithm, which is a comparison sort, is named for the way smaller or larger elements "bubble" to the top of the list. Although the algorithm is simple, it is too slow and impractical for most problems even when compared to insertion sort.[2] Bubble sort can be practical if the input is in mostly sorted order with some out-of-order elements nearly in position.
 
-import matplotlib.pyplot as plt
-import time
+import matplotlib.pyplot as plt (this is indicate all of the graphs )
+import time(to measure how fast each function works)
 first thing first, we create an instance of the TimeTest object, which will take care of generating random arrays. After out Timetest object is instanciated, we run the function, which will take care of filling up our dataframe with all the values we need for our statistics.
-
+we define the function of each alogrithms , for the quick sort ,bublbe sort , binarytree and python heap 
+create the maximum and minimum.
+when you implement the code you will see how the alogrithm works 
 
