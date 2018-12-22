@@ -34,7 +34,7 @@ def measure_this(size):
 
 #BinaryTree
 class MinMaxBinaryTree:
-    def __init__(self):
+    def __init__(self): #create a funtion
         self.content = []
 
     def add(self , value):
@@ -48,7 +48,7 @@ class MinMaxBinaryTree:
         return self.content[-1]
 
 #BinaryTree
-class MinMaxBinaryHeap(object):
+class MinMaxBinaryHeap(object): #create another function 
     def __init__(self):
         self.content = []
 
@@ -66,19 +66,19 @@ class MinMaxHeap(object):
     def __init__(self):
         self.content_min = []
         self.content_max = []
-        # heapq.heapify(self.content_min)
-        # heapq.heapify(self.content_max)
+        # heapq.heapify(self.content_min)#using this function for for deleting the root effectively extracting the minimum element in a minheap
+        # heapq.heapify(self.content_max)#extracting the maximum element in a maxheap
 
     def add(self , value):
         heapq.heappush(self.content_min , value)
         heapq.heappush(self.content_max , -value)
 
     def get_min(self):
-        if len(self.content_min) > 0:
+        if len(self.content_min) > 0:#minimum
             return self.content_min[0]
 
     def get_max(self):
-        if len(self.content_max) > 0:
+        if len(self.content_max) > 0:#maximum
             return -self.content_max[0]
 
 #Bubble Sort
